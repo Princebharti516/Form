@@ -1,0 +1,96 @@
+/* General reset for layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Centering the header */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Centering the main content */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+/* Form container */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Max width for larger screens */
+}
+
+/* Input fields styling */
+form input[type="text"],
+form input[type="tel"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* File upload styling */
+form input[type="file"] {
+  border: none;
+  padding: 10px;
+}
+
+/* Submit button styling */
+form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  /* Reduce padding for smaller screens */
+  form {
+    padding: 15px;
+  }
+  
+  /* Adjust input and button font sizes */
+  form input[type="text"],
+  form input[type="tel"],
+  form select,
+  form button[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Additional adjustments for mobile screens */
+  form {
+    padding: 10px;
+  }
+  
+  /* Smaller font for input and button on very small screens */
+  form input[type="text"],
+  form input[type="tel"],
+  form select,
+  form button[type="submit"] {
+    font-size: 12px;
+  }
+}
